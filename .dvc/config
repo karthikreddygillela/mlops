@@ -1,0 +1,4 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = https://studio.iterative.ai/user/karthikreddygillela/projects/mlops-oj974qw3o2
