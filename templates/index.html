@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Screening</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Screening App</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="resume">Upload Resume (PDF or DOCX):</label>
+            <input type="file" name="resume" accept=".pdf,.docx" required>
+    
+            <label for="job_description">Job Description:</label>
+            <textarea name="job_description" rows="4" cols="50" required></textarea><br>
+    
+            <label for="primary_skills">Primary Skills (comma-separated):</label>
+            <input type="text" name="primary_skills" required>
+    
+            <label for="secondary_skills">Secondary Skills (comma-separated):</label>
+            <input type="text" name="secondary_skills" required>
+    
+            <label for="primary_weight">Primary Skills Weight (0-1):</label>
+            <input type="number" name="primary_weight" step="0.01" required>
+    
+            <label for="secondary_weight">Secondary Skills Weight (0-1):</label>
+            <input type="number" name="secondary_weight" step="0.01" required>
+    
+            <label for="threshold">Threshold Score:</label>
+            <input type="number" name="threshold" step="0.01" required>
+    
+            <button type="submit">Submit</button>
+        </form>
+    
+        {% if missing_skills %}
+            <div class="missing-skills">
+                <h2>Missing Skills:</h2>
+                <ul>
+                    {% for skill in missing_skills %}
+                        <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    
+        {% if result is defined %}
+            <div class="result">
+                <h2>This resume is {{ result }}.</h2>
+                <p>Total Score: {{ total_score }}</p>
+            </div>
+        {% endif %}
+        
+        {% if extracted_skills %}
+            <div class="extracted-skills">
+                <h2>Extracted Skills:</h2>
+                <ul>
+                    {% for skill in extracted_skills %}
+                        <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+        <div class="skills-link">
+            <p>Want to see extracted skills from the uploaded resume?</p>
+            <a href="{{ url_for('extracted_skills') }}">Click here</a>
+        </div>
+    </div>
+</body>
+</html>

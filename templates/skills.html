@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extracted Skills</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Extracted Skills</h1>
+
+        <!-- Resume Upload Form -->
+        <form method="POST" enctype="multipart/form-data">
+            <label for="resume">Upload Resume (PDF or DOCX):</label>
+            <input type="file" name="resume" accept=".pdf,.docx" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if extracted_skills %}
+            <div class="extracted-skills">
+                <h2>Extracted Skills:</h2>
+                <ul>
+                    {% for skill in extracted_skills %}
+                        <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        <!-- Add a link back to the main page -->
+        <div class="back-link">
+            <a href="/">Back to Main Page</a>
+        </div>
+    </div>
+</body>
+</html>

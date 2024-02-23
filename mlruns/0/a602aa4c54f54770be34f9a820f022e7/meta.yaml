@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/a602aa4c54f54770be34f9a820f022e7/artifacts
+end_time: 1708582561981
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a602aa4c54f54770be34f9a820f022e7
+run_name: inquisitive-crab-736
+run_uuid: a602aa4c54f54770be34f9a820f022e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708582559062
+status: 3
+tags: []
+user_id: karth

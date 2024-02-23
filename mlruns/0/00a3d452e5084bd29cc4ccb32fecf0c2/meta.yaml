@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/00a3d452e5084bd29cc4ccb32fecf0c2/artifacts
+end_time: 1694522111451
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 00a3d452e5084bd29cc4ccb32fecf0c2
+run_name: unequaled-foal-717
+run_uuid: 00a3d452e5084bd29cc4ccb32fecf0c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694522111405
+status: 3
+tags: []
+user_id: karth

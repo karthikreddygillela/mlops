@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/f76fefd447f84142a1d225e8ce07c5d8/artifacts
+end_time: 1708574640723
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f76fefd447f84142a1d225e8ce07c5d8
+run_name: abundant-cub-855
+run_uuid: f76fefd447f84142a1d225e8ce07c5d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708574640629
+status: 3
+tags: []
+user_id: karth

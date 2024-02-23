@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/652b0f43817c424bab2ca4487a66a3c3/artifacts
+end_time: 1694536563228
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 652b0f43817c424bab2ca4487a66a3c3
+run_name: auspicious-cat-250
+run_uuid: 652b0f43817c424bab2ca4487a66a3c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694536563141
+status: 3
+tags: []
+user_id: karth
