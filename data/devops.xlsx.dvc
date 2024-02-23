@@ -1,0 +1,5 @@
+outs:
+- md5: 8344b47eedd0b37602094e9be6addacc
+  size: 7722
+  hash: md5
+  path: devops.xlsx
