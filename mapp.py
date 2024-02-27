@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the model from MLflow
-model_version = "2"  # Change this to the desired version
+model_version = "3"  # Change this to the desired version
 model = mlflow.sklearn.load_model(f"models:/mobile_classification_model/{model_version}")
 
 # Number of expected features
